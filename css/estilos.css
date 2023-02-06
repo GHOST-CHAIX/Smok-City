@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Martian Mono", sans-serif;
+}
+body{
+    background-color: rgba(0, 0, 0,4);
+}
+.capa{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    top: 0;left: 0;
+}
+/*estilos para el encabezado*/
+.header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .titulo{
+    float: left;
+    line-height: 70px;
+}
+.container .btn-menu label{
+    color:rgb(253, 131, 58);
+    font-size: 25px;
+    cursor: pointer;
+}
+.titulo h1{
+    color: #fd833a;
+    font-weight: 400;
+    font-size: 35px;
+    margin-left: 10px;
+}
+.container .menu{
+    float: right;
+    line-height: 70px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px 10px;
+    line-height: normal;
+    text-decoration: none;
+    color: #ffff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 19px;
+}
+.container .menu a:hower{
+    border-bottom:  2px solid #c7c7c7;
+    padding: 5px 10px;
+}
+/*Fin de estilos para el encabezado*/
+
+/*menu lateral*/
+
+#btm-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background:rgb(216, 106, 10);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btm-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #c7c7c7;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btm-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #fd833a;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #fd833a;
+    background: #b90404;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color:#fd833a;
+    cursor: pointer;
+    font-size: 18px;
+}
+.insta{
+    position: absolute;
+    top: 70%;
+    right: 50%;
+}
+.face{
+    position: absolute;
+    top: 75%;
+    right: 40%;
+}
+.textredes{
+    position: absolute;
+    top: 60%;
+    right: 33%;
+    color: #ffff;
+    font-size: 28px;
+}

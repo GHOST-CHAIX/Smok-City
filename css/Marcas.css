@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Martian Mono", sans-serif;
+}
+body{
+background-color: rgba(0,0,0,4);
+}
+.title{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+.introduction{
+    color: #fff;
+    top: 30%;
+    position: absolute;
+    right: 10%;
+}
+.introduction_2{
+    color: #fff;
+    top: 130%;
+    position: absolute;
+    right: 10%;
+}
+.Mk{
+    position: absolute;
+    top: 60%;
+    right: 70%;
+}
+.IG{
+    position: absolute;
+    right: 10%;
+    top: 60%;
+}
+.ipl{
+    position: absolute;
+    top: 65%;
+    right: 35%;
+}
+.marca{
+    color:#fd833a;
+    position: absolute;
+    left: -5%;
+    top: 0%;
+    transform: translate(100% ,100%);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    display: inline-block;
+    line-height: normal;
+    font-size: 28px;
+    text-decoration: none;
+
+}
+.buttonstar a{
+    color: #fff;
+    position: absolute;
+    left: 85%;
+    top: 4%;
+    transform: translate(100% ,100%);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    display: inline-block;
+    line-height: normal;
+    font-size: 18px;
+    text-decoration: none;
+}
+.buttonstar a:hower{
+    border-bottom:  2px solid #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+}
